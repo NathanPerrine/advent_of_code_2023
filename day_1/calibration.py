@@ -1,7 +1,7 @@
 # Could be better, first iteration was O(n) list comprehension
 # Second iteration has to loop through each line a second time to check dictionary entries. Also since word numbers overlap would be smarter to loop through from the right of the line as well, but keeping the last letter when a word was found prevents issues such as 'twone' counting as two, instead of one.
 
-file = open("input", "r")
+file = open("day_1/input.txt", "r")
 
 words_to_numbers = {
   'one': 1,
